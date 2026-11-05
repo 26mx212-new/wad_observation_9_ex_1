@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Result</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #eaf2f8;
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 12px;
+        }
+
+        th {
+            background-color: navy;
+            color: white;
+        }
+
+        h2 {
+            color: darkblue;
+        }
+
+        .pass {
+            color: green;
+        }
+
+        .fail {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Total Billt</h1>
+
+    <h2>Welcome <%= name %></h2>
+
+    <!-- Calculate total and average using JavaScript -->
+    <%
+        let total = p1*5 + p2*10 + p3*12;
+        let average = total / 3;
+    %>
+
+    <table>
+
+        <tr>
+            <th>Product</th>
+            <th>Cost</th>
+        </tr>
+
+        <tr>
+            <td>Pencil</td>
+            <td><%= p1*5 %></td>
+        </tr>
+
+        <tr>
+            <td>Pen</td>
+            <td><%= p2*10 %></td>
+        </tr>
+
+        <tr>
+            <td>Scale</td>
+            <td><%= p3*12 %></td>
+        </tr>
+
+        <tr>
+            <th>Total</th>
+            <th><%= total %></th>
+        </tr>
+
+        
+
+    </table>
+
+    <a href="/">Back to Student Form</a>
+
+</body>
+</html>

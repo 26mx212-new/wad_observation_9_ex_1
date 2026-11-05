@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Mark Evaluation</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #eaf2f8;
+            text-align: center;
+        }
+
+        form {
+            background-color: white;
+            width: 350px;
+            margin: 40px auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input {
+            padding: 10px;
+            margin: 8px;
+            width: 85%;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: navy;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Tara E-shoppee</h1>
+
+    <!-- Form submits data to the /evaluate route -->
+    <form action="/evaluate" method="POST">
+        <label>Customer Nmae</label>
+        <input type="text"
+               name="name"
+               placeholder="Customer name"
+               required>
+        <label>Pencil</label>
+        <input type="number"
+               name="p1"
+               placeholder="Pencil Rs 5"
+               min="0" max="100"
+               required>
+
+        <label>Pen</label>
+        <input type="number"
+               name="p2"
+               placeholder="Pen rs 10"
+               min="0" max="100"
+               required>
+        <label>Scale</label>
+        <input type="number"
+               name="p3"
+               placeholder="Scale Rs 12"
+               min="0" max="100"
+               required>
+
+        <br><br>
+
+        <button type="submit">Calculate Bill</button>
+
+    </form>
+
+</body>
+</html>

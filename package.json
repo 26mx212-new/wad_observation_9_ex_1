@@ -1,0 +1,26 @@
+{
+  "name": "observatio_9",
+  "version": "1.0.0",
+  "description": "Sample shopping Bill calculator using EJS,express and node js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^7.0.2",
+    "espress": "^0.0.0",
+    "express": "^5.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyantara/26mx212.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/nyantara/26mx212/issues"
+  },
+  "homepage": "https://github.com/nyantara/26mx212#readme"
+}
